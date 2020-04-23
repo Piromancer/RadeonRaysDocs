@@ -1,0 +1,13 @@
+{# layout.html #}
+{# Import the theme's layout. #}
+{% extends "!layout.html" %}
+
+{% set css_files = css_files + ['_static/custom.css'] %}
+{% set script_files = script_files + ['_static/custom.js'] %}
+
+
+{% block extrahead %}
+    <link rel="shortcut icon" type="image/x-icon" href="{{pathto("_static/favicon.png", 1)}}">
+	
+{% endblock %}
+
